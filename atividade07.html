@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07</title>
+</head>
+<body>
+    <h1>Data</h1>
+    <div id="data"></div>
+    <script>
+        let dia = prompt("Digite o dia.");
+        let mes = prompt("Digite o mês.");
+        let ano = prompt("Digite o ano.");
+        let exibir;
+
+        exibir = "Hoje é dia: " + dia + " Do mês: " + mes + " do Ano: " + ano;
+
+        if(mes == 1){
+            resul = "Hoje é dia " + dia + " de Janeiro " + " de " + ano;
+        }
+        else if(mes == 2){
+            resul = "Hoje é dia " + dia + " de Fevereiro " + " de " + ano;
+        }
+        else if(mes == 3){
+            resul = "Hoje é dia " + dia + " de Março " + " de " + ano;
+        }
+        else if(mes == 4){
+            resul = "Hoje é dia " + dia + " de Abril " + " de " + ano;
+        }
+        else if(mes == 5){
+            resul = "Hoje é dia " + dia + " de Maio " + " de " + ano;
+        }
+        else if(mes == 6){
+            resul = "Hoje é dia " + dia + " de Junho " + " de " + ano;
+        }
+        else if(mes == 7){
+            resul = "Hoje é dia " + dia + " de Julho " + " de " + ano;
+        }
+        else if(mes == 8){
+            resul = "Hoje é dia " + dia + " de Agosto " + " de " + ano;
+        }
+        else if(mes == 9){
+            resul = "Hoje é dia " + dia + " de Setembro " + " de " + ano;
+        }
+        else if(mes == 10){
+            resul = "Hoje é dia " + dia + " de Outubro " + " de " + ano;
+        }
+        else if(mes == 11){
+            resul = "Hoje é dia " + dia + " de Novembro " + " de " + ano;
+        }
+        else if(mes == 12){
+            resul = "Hoje é dia " + dia + " de Dezembro " + " de " + ano;
+        }
+
+        document.getElementById("data").innerHTML = resul
+
+    </script>
+</body>
+</html>

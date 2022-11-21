@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+    <h1>Comissão Funcionarios</h1>
+    <div id="comm"></div>
+    <script>
+
+        let nome1 = prompt("Digite o nome do funcionario.");
+        let vendas = Number(prompt("Digite o tanto que este funcionario vendeu."));
+        let comissao ;
+        let resul ;
+
+        if(vendas <= 250){
+            comissao = Number(vendas * 1);
+            resul = "Este funcionario: " + nome1 + " vendeu: " + vendas + " E receberá: R$" + comissao
+        }
+        else if(vendas >= 500){
+            comissao = Number(vendas * 2);
+            resul = "Este funcionario: " + nome1 + " vendeu: " + vendas + " E receberá: R$" + comissao
+        } 
+        else if(vendas >= 250){
+            comissao = Number(vendas * 1.50);
+            resul = "Este funcionario: " + nome1 + " vendeu: " + vendas + " E receberá: R$" + comissao
+        }
+        
+        document.getElementById("comm").innerHTML = resul
+    </script>
+</body>
+</html>

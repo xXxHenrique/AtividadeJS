@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <h1>Lanchonete</h1>
+    <h4>Promoção! big super Sanduba - Especificações  = 2 hamburgueres, queijo, batata frita e refrigerante - Preço R$ 5,00</h4>
+    <h4>Promoção! big super Sanduba - Especificações  = 1 hamburgueres, batata frita e refrigerante - Preço 3,00</h4>
+    <h4>Promoção! big super Sanduba - Especificações  = 1 misto quente e refrigerante - Preçp R$ 1,50</h4>
+
+    <div id="lanchonete"></div>
+    <script>
+        const Valor_opcao1 = 5.00;
+        const Valor_opcao2 = 3.00;
+        const Valor_opcao3 = 1.50
+
+        let cliente = prompt("Qual o seu nome?")
+        let opcao = prompt("Qual opção você quer?")
+        let resul ;
+
+        if(opcao == 1){
+            resul = "Cliente:" + cliente + "seu valor a pagar é de R$" + Valor_opcao1
+        }
+        else if(opcao == 2){
+            resul = "Cliente:" + cliente + "seu valor a pagar é de R$" + Valor_opcao2
+        }
+        else if(opcao == 3){
+            resul = "Cliente:" + cliente + "seu valor a pagar é de R$" + Valor_opcao3
+        }
+
+        document.getElementById("lanchonete").innerHTML = resul
+    </script>
+</body>
+</html>

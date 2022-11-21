@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+   <h1>Digite o nome de três pessoas e seus pesos, depois  imprima os dados em ordem decresente</h1> 
+   <p id="resultado"></p>
+   <script>
+    let nome1 = prompt("Qual é o nome da primeira pessoa");
+    let peso1 = Number(prompt("Digite o peso da primeira pessoa"));
+    let nome2 = prompt("Qual é o nome da segunda pessoa");
+    let peso2 = Number(prompt("Digite o peso da segunda pessoa"));
+    let nome3 = prompt("Qual é o nome da terceira pessoa");
+    let peso3 = Number(prompt("Digite o peso da terceira pessoa"));
+    let peso
+
+    if(peso1 >= peso2 && peso1 >= peso3 && peso2 >= peso3){
+            pesos = nome1 + peso1 + "</br>" + nome2 + peso2 + "</br>" + nome3 + peso3
+
+        } else if (peso1 >= peso2 && peso1 >= peso3 && peso2 < peso3){ 
+            pesos = nome1 + peso1 + "</br>" + nome3 + peso3 + "</br>" + nome2 + peso2
+
+        } else if(peso2 >= peso1 && peso2 >= peso3 && peso1 >= peso3){ 
+            pesos = nome2+ peso2 + "</br>" + nome1 + peso1 + "</br>" + nome3+ peso3
+        }
+        else if(peso2 >= peso3 && peso2 >= peso1&& peso1 < peso3){ 
+            pesos = nome2 + peso2 + "</br>" + nome3 + peso3 + "</br>" + nome1 + peso1
+        }
+
+        else if(peso3 >= peso2 && peso3 >= peso1 && peso1 >= peso2){
+            pesos = nome3 + peso3 + "</br>" + nome1 + peso1 + "</br>" + nome2 + peso2
+        }
+
+        else if(peso3 >= peso1 && peso3 >= peso2 && peso1< peso2){ 
+            pesos = nome3 + peso3 + "</br>" + nome2 + peso2 + "</br>" + nome1 + peso1
+        }
+
+        document.getElementById("resultado").innerHTML = pesos;
+
+   </script>
+</body>
+</html>
